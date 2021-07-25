@@ -1,16 +1,116 @@
 <html>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1.0">
-<title>cv faiz taufiqilah</title>
-<link rel="stylesheet" href="style.css">
+<style>
 
-<head>
 
-<h1>adios master</h1>
+p {
+		font-family: courier;
+		font-size: 26;
+}
 
-</head>
-    <body>
-    
-    
-    
-        </body>
+button {
+padding: 26;
+background-color: green;
+color: white;
+font-size: 27;
+border-radius: 10;
+
+}
+
+html {
+		background-color: white;
+}
+
+#ul {
+background-color: black;
+padding: 101px;
+margin-left:-10;
+margin-top:-20;
+margin-right: -10;
+
+
+
+#bawah {
+background-color:#5EA6A6 ;
+padding: 20px;
+margin-left:-10;
+margin-top:-10;
+margin-right: -10;
+}
+
+#container {
+padding: 30px;
+margin-left:-35;
+margin-top: -13;
+margin-right: -10;
+height: 40%;
+background-color: white;
+}
+</style>
+
+<ul id="ul">
+				<h1 style="font-family: lucida-console;background-color: blue; padding: 1%;border-radius: 50%; text-align: center; color: white; font-size: 500%;">Tempat Test kkm</h1>
+				</ul>
+				
+				<div style="background-color:#5EA6A6 ;
+padding: 30px;
+margin-left:-35;
+margin-top: -13;
+margin-right: -10;
+height: 94%;
+">
+
+
+
+<h2 style="text-align: left; font-family: georgia;">bagaimana cara mengetest nilai kkm kita?</h2>
+<br>
+
+<font style="font-family: courier;">
+				<b>
+<table>
+<li>tekan tombol hijau</li>
+<li>masukan nilai anda</li>
+<li>selesai</li>
+</b>
+</table>
+</font>
+
+<h2 style="text-align: left; font-family: georgia;">syarat memasukan nilai</h2>
+<br>
+<font style="font-family: courier;">
+				<b>
+<li>Angka tidakboleh diatas 100</li>
+<li>Angka harus diantara 0-100</li>
+<br>
+<h2 style="text-align: left; font-family: georgia;">Scrool kebawah untuk test nilai kamu!</h2>
+<br>
+</b></font>
+
+
+
+
+
+<button onclick="tombol1()">test kkm anda</button>
+<form method="post" action="testkkm.html"><button style="display:none;" type="submit" id="tombol2">test selanjutnya</button></form>
+<p id="nilai"></p>
+</div>
+      <div class="container">
+      				
+      </div>
+<script>
+				
+function tombol1() {
+	var nilai= prompt("masukan nilai anda")
+	if (nilai > 76) {
+					document.getElementById("nilai").innerHTML ="anda diatas kkm";
+	}else if (nilai < 76) {
+			document.getElementById("nilai").innerHTML ="anda dibawah kkm";
+	}if (nilai > 101) {
+	document.getElementById("nilai").innerHTML="masukkan nilai yang benar!";
+	}
+	
+	document.getElementById("tombol2").style.display="block";
+
+}
+
+				
+</script>
